@@ -81,4 +81,4 @@ Add to `claude_desktop_config.json`:
 
 ## Status
 
-Verified against the live Drift Apparel store (products, prices and inventory read correctly) and against sample data, with an automated smoke test. The store has no stock or orders yet, so the order and pre-order tools have only been exercised on sample data.
+All four tools are verified against the live Drift Apparel store (products, prices and inventory read correctly) and against sample data, with an automated smoke test. The store has no stock or orders yet, so on the live store `recent_orders` and `preorder_summary` correctly return empty results, and `low_stock` flags every active SKU at 0 of its planned 20 units. Their non-empty output has only been exercised on sample data.
