@@ -1,0 +1,50 @@
+﻿[
+    {
+        "product":  "Coastal Drift Polo",
+        "status":  "ACTIVE",
+        "variant":  "M",
+        "sku":  "CDP-M",
+        "price":  699,
+        "inventory":  6
+    },
+    {
+        "product":  "Coastal Drift Polo",
+        "status":  "ACTIVE",
+        "variant":  "L",
+        "sku":  "CDP-L",
+        "price":  699,
+        "inventory":  14
+    },
+    {
+        "product":  "Coastal Drift Polo",
+        "status":  "ACTIVE",
+        "variant":  "XL",
+        "sku":  "CDP-XL",
+        "price":  699,
+        "inventory":  3
+    },
+    {
+        "product":  "Fairway Wave Polo",
+        "status":  "ACTIVE",
+        "variant":  "M",
+        "sku":  "FWP-M",
+        "price":  699,
+        "inventory":  18
+    },
+    {
+        "product":  "Fairway Wave Polo",
+        "status":  "ACTIVE",
+        "variant":  "L",
+        "sku":  "FWP-L",
+        "price":  699,
+        "inventory":  9
+    },
+    {
+        "product":  "Fairway Wave Polo",
+        "status":  "ACTIVE",
+        "variant":  "XL",
+        "sku":  "FWP-XL",
+        "price":  699,
+        "inventory":  0
+    }
+]
