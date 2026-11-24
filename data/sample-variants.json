@@ -1,50 +1,258 @@
-﻿[
-    {
-        "product":  "Coastal Drift Polo",
-        "status":  "ACTIVE",
-        "variant":  "M",
-        "sku":  "CDP-M",
-        "price":  699,
-        "inventory":  6
-    },
-    {
-        "product":  "Coastal Drift Polo",
-        "status":  "ACTIVE",
-        "variant":  "L",
-        "sku":  "CDP-L",
-        "price":  699,
-        "inventory":  14
-    },
-    {
-        "product":  "Coastal Drift Polo",
-        "status":  "ACTIVE",
-        "variant":  "XL",
-        "sku":  "CDP-XL",
-        "price":  699,
-        "inventory":  3
-    },
-    {
-        "product":  "Fairway Wave Polo",
-        "status":  "ACTIVE",
-        "variant":  "M",
-        "sku":  "FWP-M",
-        "price":  699,
-        "inventory":  18
-    },
-    {
-        "product":  "Fairway Wave Polo",
-        "status":  "ACTIVE",
-        "variant":  "L",
-        "sku":  "FWP-L",
-        "price":  699,
-        "inventory":  9
-    },
-    {
-        "product":  "Fairway Wave Polo",
-        "status":  "ACTIVE",
-        "variant":  "XL",
-        "sku":  "FWP-XL",
-        "price":  699,
-        "inventory":  0
-    }
+[
+  {
+    "product": "Drift Course Polo — Sand",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-COURSE-POLO-SAND-M",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Sand",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-COURSE-POLO-SAND-L",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Sand",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-COURSE-POLO-SAND-XL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Sand",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-COURSE-POLO-SAND-XXL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Cobalt",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-COURSE-POLO-COBALT-M",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Cobalt",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-COURSE-POLO-COBALT-L",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Cobalt",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-COURSE-POLO-COBALT-XL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Cobalt",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-COURSE-POLO-COBALT-XXL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Fairway",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-COURSE-POLO-FAIRWAY-M",
+    "price": 650,
+    "inventory": 6
+  },
+  {
+    "product": "Drift Course Polo — Fairway",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-COURSE-POLO-FAIRWAY-L",
+    "price": 650,
+    "inventory": 14
+  },
+  {
+    "product": "Drift Course Polo — Fairway",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-COURSE-POLO-FAIRWAY-XL",
+    "price": 650,
+    "inventory": 3
+  },
+  {
+    "product": "Drift Course Polo — Fairway",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-COURSE-POLO-FAIRWAY-XXL",
+    "price": 650,
+    "inventory": 0
+  },
+  {
+    "product": "Drift Course Polo — Atlantic",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-COURSE-POLO-ATLANTIC-M",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Atlantic",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-COURSE-POLO-ATLANTIC-L",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Atlantic",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-COURSE-POLO-ATLANTIC-XL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Atlantic",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-COURSE-POLO-ATLANTIC-XXL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Sunset",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-COURSE-POLO-SUNSET-M",
+    "price": 650,
+    "inventory": 18
+  },
+  {
+    "product": "Drift Course Polo — Sunset",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-COURSE-POLO-SUNSET-L",
+    "price": 650,
+    "inventory": 9
+  },
+  {
+    "product": "Drift Course Polo — Sunset",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-COURSE-POLO-SUNSET-XL",
+    "price": 650,
+    "inventory": 12
+  },
+  {
+    "product": "Drift Course Polo — Sunset",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-COURSE-POLO-SUNSET-XXL",
+    "price": 650,
+    "inventory": 2
+  },
+  {
+    "product": "Drift Course Polo — Salt",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-COURSE-POLO-SALT-M",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Salt",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-COURSE-POLO-SALT-L",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Salt",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-COURSE-POLO-SALT-XL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Course Polo — Salt",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-COURSE-POLO-SALT-XXL",
+    "price": 650,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Birdies & Bogeys Polo — Sage",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-BIRDIES-BOGEYS-SAGE-M",
+    "price": 750,
+    "inventory": 5
+  },
+  {
+    "product": "Drift Birdies & Bogeys Polo — Sage",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-BIRDIES-BOGEYS-SAGE-L",
+    "price": 750,
+    "inventory": 11
+  },
+  {
+    "product": "Drift Birdies & Bogeys Polo — Sage",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-BIRDIES-BOGEYS-SAGE-XL",
+    "price": 750,
+    "inventory": 16
+  },
+  {
+    "product": "Drift Birdies & Bogeys Polo — Sage",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-BIRDIES-BOGEYS-SAGE-XXL",
+    "price": 750,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Coastal Lighthouse Polo — Navy",
+    "status": "ACTIVE",
+    "variant": "M",
+    "sku": "DRIFT-COASTAL-LIGHTHOUSE-NAVY-M",
+    "price": 750,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Coastal Lighthouse Polo — Navy",
+    "status": "ACTIVE",
+    "variant": "L",
+    "sku": "DRIFT-COASTAL-LIGHTHOUSE-NAVY-L",
+    "price": 750,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Coastal Lighthouse Polo — Navy",
+    "status": "ACTIVE",
+    "variant": "XL",
+    "sku": "DRIFT-COASTAL-LIGHTHOUSE-NAVY-XL",
+    "price": 750,
+    "inventory": 20
+  },
+  {
+    "product": "Drift Coastal Lighthouse Polo — Navy",
+    "status": "ACTIVE",
+    "variant": "XXL",
+    "sku": "DRIFT-COASTAL-LIGHTHOUSE-NAVY-XXL",
+    "price": 750,
+    "inventory": 20
+  }
 ]

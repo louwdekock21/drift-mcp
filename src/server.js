@@ -38,6 +38,7 @@ server.tool(
     const flagged = [];
     const unknown = [];
     for (const v of await getVariants()) {
+      if (v.status && v.status !== "ACTIVE") continue; // drafts aren't in production
       const base = orig[v.sku];
       if (!base) { unknown.push(v.sku); continue; }
       const pct = Math.round((v.inventory / base) * 100);

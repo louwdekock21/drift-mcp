@@ -17,7 +17,9 @@ try {
 const hasClientCreds = () =>
   Boolean(process.env.SHOPIFY_CLIENT_ID && process.env.SHOPIFY_CLIENT_SECRET);
 
+// Set DRIFT_SAMPLE=1 to force the built-in sample data (handy for demos).
 export const isLive = () =>
+  !process.env.DRIFT_SAMPLE &&
   Boolean(
     process.env.SHOPIFY_STORE &&
       (process.env.SHOPIFY_ACCESS_TOKEN || hasClientCreds())
@@ -96,10 +98,13 @@ export async function getVariants() {
 
 export async function getOrders(days) {
   if (!isLive()) {
-    const cutoff = Date.now() - days * 864e5;
-    return readJson("sample-orders.json").filter(
-      (o) => new Date(o.createdAt).getTime() >= cutoff
-    );
+    // Sample orders store "daysAgo" so they never go stale.
+    return readJson("sample-orders.json")
+      .filter((o) => o.daysAgo <= days)
+      .map(({ daysAgo, ...o }) => ({
+        ...o,
+        createdAt: new Date(Date.now() - daysAgo * 864e5).toISOString(),
+      }));
   }
   const since = new Date(Date.now() - days * 864e5).toISOString();
   const data = await gql(

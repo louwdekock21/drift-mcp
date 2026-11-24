@@ -42,7 +42,9 @@ SHOPIFY_CLIENT_SECRET=...
 
 The server exchanges these for a short-lived Admin API token (client-credentials grant) and refreshes it automatically. A static `SHOPIFY_ACCESS_TOKEN` also works.
 
-Original PO quantities live in `data/original-stock.json` (Shopify doesn't store them). Update it when a PO lands.
+Set `DRIFT_SAMPLE=1` to force the sample data even when credentials are present (useful for demos). The sample data uses Drift's real product and SKU names with made-up stock levels and orders.
+
+Original PO quantities live in `data/original-stock.json` (Shopify doesn't store them). They are currently a planned 20 units per active SKU, not a confirmed order; update the file when a PO lands. Draft products are ignored by `low_stock`.
 
 ### Use it with Claude Desktop
 
@@ -75,7 +77,6 @@ Add to `claude_desktop_config.json`:
 
 - The pre-order logic treats any ordered variant with zero or negative stock as a pre-order. A product tag or inventory policy check would be more precise.
 - Pagination is capped at 100 products and 100 orders. Fine for a small catalogue, not for a large one.
-- Sample orders are dated relative to when the data was generated, so long-range queries on sample data go stale.
 - No caching or rate-limit handling yet.
 
 ## Status
