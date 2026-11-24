@@ -4,7 +4,7 @@ A small, read-only [MCP](https://modelcontextprotocol.io) server that lets Claud
 
 ## The problem it solves
 
-Drift orders stock from a supplier in small runs, and the reorder rule I set is simple: **reorder a SKU when it falls to 50% of its original purchase order**. Lead times are long, so missing that moment means stock-outs while ad spend keeps running. Checking this by hand means opening Shopify, copying inventory counts and comparing them to the original PO. With this server I can ask Claude instead:
+Drift orders stock from a supplier in limited production runs, and the reorder rule I set is simple: **reorder a SKU when it falls to 50% of its original purchase order**. Lead times are long, so missing that moment means stock-outs while ad spend keeps running. Checking this by hand means opening Shopify, copying inventory counts and comparing them to the original PO. With this server I can ask Claude instead:
 
 > "Which SKUs do I need to reorder?"
 > "How many pre-orders are waiting on out-of-stock sizes?"
@@ -56,7 +56,8 @@ Add to `claude_desktop_config.json`:
       "args": ["C:/path/to/drift-mcp/src/server.js"],
       "env": {
         "SHOPIFY_STORE": "your-store.myshopify.com",
-        "SHOPIFY_ACCESS_TOKEN": "shpat_..."
+        "SHOPIFY_CLIENT_ID": "...",
+        "SHOPIFY_CLIENT_SECRET": "..."
       }
     }
   }
@@ -79,4 +80,4 @@ Add to `claude_desktop_config.json`:
 
 ## Status
 
-Working against sample data with an automated smoke test. Drift's store has no live stock yet (first production run is being funded), so it has not run against real sales.
+Verified against the live Drift Apparel store (products, prices and inventory read correctly) and against sample data, with an automated smoke test. The store has no stock or orders yet, so the order and pre-order tools have only been exercised on sample data.
