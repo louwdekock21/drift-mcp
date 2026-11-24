@@ -1,20 +1,24 @@
-﻿{
-    "name":  "drift-mcp",
-    "version":  "1.0.0",
-    "scripts":  {
-                    "start":  "node src/server.js",
-                    "test":  "node test/smoke.js"
-                },
-    "keywords":  [
-
-                 ],
-    "author":  "",
-    "license":  "ISC",
-    "dependencies":  {
-                         "@modelcontextprotocol/sdk":  "^1.32.2",
-                         "zod":  "^4.6.7"
-                     },
-    "type":  "module",
-    "main":  "src/server.js",
-    "description":  "Read-only MCP server that lets Claude answer stock, order and pre-order questions for a Shopify store"
+{
+  "name": "drift-mcp",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/smoke.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "shopify",
+    "inventory",
+    "claude"
+  ],
+  "author": "Louw de Kock",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "type": "module",
+  "main": "src/server.js",
+  "description": "Read-only MCP server that lets Claude answer stock, order and pre-order questions for a Shopify store"
 }
